@@ -17,7 +17,7 @@ function preload()
 }
 
 function setup() {
-	createCanvas(800, 750);
+	createCanvas(1200, 750);
 
 	// fairyVoice.play();
 
@@ -42,18 +42,9 @@ function setup() {
 
 function draw() {
   background(bgImg);
-
+  fairy.x=mouseX;
+  fairy.y=mouseY;
   drawSprites();
 
 }
 
-function keyPressed() {
-	
-	if (keyDown("RIGHT_ARROW")) {
-		fairy.velocityX=4;
-}
-		
-		  if (keyDown("LEFT_ARROW")) {
-		fairy.velocityX=-4;
-}
-}
